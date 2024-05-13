@@ -27,27 +27,27 @@ void loop() {
   int extButtonState2 = digitalRead(extButton2);
 
   if (buttonState1 == 0) {
-    sendMidiNoteOn(60); // Send MIDI note on with note number 60 (middle C)
+    sendMidiNoteOn(60);
     delay(debounce);
   }
   if (buttonState2 == 0) {
-    sendMidiNoteOn(62); // Send MIDI note on with note number 62 (D)
+    sendMidiNoteOn(61);
     delay(debounce);
   }
   if (buttonState3 == 0) {
-    sendMidiNoteOn(64); // Send MIDI note on with note number 64 (E)
+    sendMidiNoteOn(62);
     delay(debounce);
   }
   if (buttonState4 == 0) {
-    sendMidiNoteOn(65); // Send MIDI note on with note number 65 (F)
+    sendMidiNoteOn(63);
     delay(debounce);
   }
   if (extButtonState1 == 0) {
-    sendMidiNoteOn(67); // Send MIDI note on with note number 67 (G)
+    sendMidiNoteOn(64);
     delay(debounce);
   }
   if (extButtonState2 == 0) {
-    sendMidiNoteOn(69); // Send MIDI note on with note number 69 (A)
+    sendMidiNoteOn(65);
     delay(debounce);
   }
 }
